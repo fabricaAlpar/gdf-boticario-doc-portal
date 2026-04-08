@@ -1,0 +1,577 @@
+/* styles/global.css */
+/* ============================================
+   DESIGN TOKENS — fontes, tamanhos e cores
+============================================ */
+:root {
+    /* Tipografia */
+    --font-title:   'IBM Plex Sans', sans-serif;
+    --font-body:    'Montserrat', sans-serif;
+
+    --fs-title:     28px;   /* h1 principal */
+    --fs-subtitle:  13px;   /* subtítulo "GDF Auditoria" */
+    --fs-section:   16px;   /* h2 de cada aba */
+    --fs-body:      13px;   /* parágrafos e conteúdo */
+    --fs-badge:     12px;   /* badges de navegação */
+    --fs-meta:      12px;   /* data de atualização */
+    --fs-subsection: 14px;  /* subtítulos h3 dentro das seções */
+
+    /* Paleta de cores */
+    --color-primary:    #011E38;  /* Azul Marinho */
+    --color-secondary:  #F5F1EB;  /* Off White */
+    --color-tertiary:   #264FEC;  /* Azul Royal */
+    --color-quaternary: #FFBC82;  /* Salmon */
+}
+
+hr {
+    border: none;
+    border-top: 2px solid var(--color-tertiary);
+    margin: 0;
+}
+
+
+body {
+    background-color: var(--color-secondary);
+    margin: 0;
+    padding: 64px 16px 40px;
+    font-family: var(--font-body);
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: var(--fs-body);
+}
+
+table th {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:hover td {
+    background-color: #f5f5f5;
+}
+
+/* Índice de seções estilo path — reutilizável em qualquer aba */
+.section-index {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 16px 0 8px;
+    padding: 8px 14px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+
+.section-index a {
+    color: var(--color-tertiary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.section-index a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.section-index-sep {
+    color: #aaa;
+    font-weight: 400;
+    user-select: none;
+}
+
+
+/* styles/card.css */
+#card {
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    padding: 32px;
+}
+
+
+/* styles/main_title.css */
+#main_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#main_title img {
+    height: 60px;
+    width: auto;
+}
+
+#main_title h1 {
+    flex: 1;
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: var(--fs-title);
+    margin-bottom: 2px;
+}
+
+#main_title .subtitle {
+    text-align: center;
+    color: #bdbdbd;
+    font-size: var(--fs-subtitle);
+    margin: 0;
+}
+
+
+/* styles/main_navigation.css */
+#main_navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#main_navigation nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+#main_navigation nav ul li a {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 16px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: var(--fs-badge);
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+#main_navigation nav ul li a:hover {
+    background-color: #02305a;
+}
+
+#main_navigation nav ul li a.active,
+#main_navigation nav ul li a.active:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    outline: 2px solid var(--color-tertiary);
+    outline-offset: 2px;
+}
+
+#main_navigation .last-update {
+    font-size: var(--fs-meta);
+    color: #888;
+}
+
+
+/* styles/main_content.css */
+#main_content h2 {
+    font-size: var(--fs-section);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#main_content h3 {
+    font-size: var(--fs-subsection);
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+#main_content p,
+#main_content td,
+#main_content th {
+    font-size: var(--fs-body);
+}
+
+#main_content p {
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+#main_content {
+    margin-top: 40px;
+}
+
+
+/* styles/inner_tabs.css */
+.inner-tabs {
+    margin-top: 16px;
+}
+
+.inner-tab-nav {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.inner-tab-btn {
+    padding: 3px 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--color-primary);
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--color-secondary);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.inner-tab-btn:hover {
+    background-color: #02305a;
+}
+
+.inner-tab-btn.active {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    outline: 2px solid var(--color-tertiary);
+    outline-offset: 2px;
+}
+
+.inner-tab-panel {
+    display: none;
+}
+
+.inner-tab-panel.active {
+    display: block;
+}
+
+.inner-tab-panel p {
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+
+/* styles/lang_switcher.css */
+#lang_switcher {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.lang-btn {
+    background: none;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 2px 4px;
+    line-height: 1;
+    transition: border-color 0.2s;
+}
+
+.lang-btn:hover {
+    border-color: #bdbdbd;
+}
+
+.lang-btn.active {
+    border-color: #555;
+}
+
+
+/* styles/footer.css */
+#main_footer {
+    margin-top: 32px;
+    padding-top: 12px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main_footer .last-update {
+    font-size: var(--fs-meta);
+    color: #bdbdbd;
+}
+
+
+/* styles/responsive.css */
+/* ============================================
+   RESPONSIVIDADE
+   Tablet: max-width 900px
+   Mobile: max-width 600px
+============================================ */
+
+/* ---------- TABLET ---------- */
+@media (max-width: 900px) {
+    body {
+        padding: 24px 12px;
+    }
+
+    #card {
+        padding: 24px;
+    }
+
+    #main_title img {
+        height: 44px;
+    }
+
+    #main_title h1 {
+        font-size: 22px;
+    }
+
+    #main_navigation nav ul {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 600px) {
+    body {
+        padding: 10px 8px;
+    }
+
+    #card {
+        padding: 16px;
+        border-radius: 8px;
+    }
+
+    /* Título: imagens menores, título reduzido */
+    #main_title {
+        gap: 8px;
+    }
+
+    #main_title img {
+        height: 32px;
+    }
+
+    #main_title h1 {
+        font-size: 16px;
+    }
+
+    #main_title .subtitle {
+        font-size: 11px;
+    }
+
+    /* Navegação: badges em cima, flags embaixo */
+    #main_navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #main_navigation nav ul {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    #main_navigation nav ul li a {
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+
+    #lang_switcher {
+        align-self: flex-end;
+    }
+
+    /* Tabela: scroll horizontal */
+    #main_content {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 400px;
+    }
+
+    /* Rodapé: empilha verticalmente */
+    #main_footer {
+        flex-direction: column;
+        gap: 4px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+/* introduction/styles/introducao.css */
+/* Estilos específicos do #introducao */
+#introducao h2 {
+    border-left: 4px solid #555;
+    padding-left: 10px;
+}
+
+#introducao p {
+    line-height: 1.7;
+    color: #444;
+}
+
+
+/* general_view/styles/visao-geral.css */
+/* Estilos específicos do #visao-geral */
+#visao-geral h2 {
+    border-left: 4px solid #555;
+    padding-left: 10px;
+}
+
+#visao-geral p {
+    line-height: 1.7;
+    color: #444;
+}
+
+#sincronismo-automatico,
+#modos-de-operacao,
+#principais-funcionalidades,
+#seguranca-de-dados {
+    margin-top: 24px;
+}
+
+#sincronismo-automatico h3,
+#modos-de-operacao h3,
+#principais-funcionalidades h3,
+#seguranca-de-dados h3 {
+    font-size: var(--fs-section);
+    font-weight: 600;
+    margin-bottom: 8px;
+    border-left: 3px solid #bdbdbd;
+    padding-left: 10px;
+}
+
+
+/* usability/styles/usabilidade.css */
+/* ── FAQ ──────────────────────────────────────────── */
+#usabilidade-faq {
+    margin-top: 24px;
+    padding: 16px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+}
+
+#usabilidade-faq h3 {
+    font-size: var(--fs-section);
+    font-weight: 600;
+    margin: 0 0 12px;
+    border-left: 3px solid #bdbdbd;
+    padding-left: 10px;
+}
+
+#faq-input {
+    width: 100%;
+    padding: 8px 14px;
+    border: 1.5px solid #ccc;
+    border-radius: 20px;
+    font-family: var(--font-body);
+    font-size: var(--fs-body);
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+#faq-input:focus {
+    border-color: var(--color-tertiary);
+}
+
+#faq-results {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.faq-result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+}
+
+.faq-snippet {
+    flex: 1;
+    font-size: var(--fs-body);
+    color: #444;
+    line-height: 1.6;
+}
+
+.faq-mark {
+    background-color: var(--color-quaternary);
+    border-radius: 2px;
+    padding: 0 2px;
+    font-weight: 600;
+}
+
+.faq-goto-btn {
+    white-space: nowrap;
+    padding: 3px 12px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+    border-radius: 12px;
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.faq-goto-btn:hover {
+    background-color: #02305a;
+}
+
+.faq-empty {
+    font-size: var(--fs-body);
+    color: #999;
+    font-style: italic;
+    margin: 4px 0 0;
+}
+
+/* Destaque temporário ao navegar até o trecho */
+.faq-highlight {
+    background-color: rgba(255, 188, 130, 0.35) !important;
+    border-radius: 4px;
+    transition: background-color 0.5s ease;
+}
+
+/* ── Subtópicos ──────────────────────────────────── */
+#usabilidade-subtopicos {
+    margin-top: 28px;
+}
+
+#usabilidade-subtopicos h3 {
+    font-size: var(--fs-section);
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    border-left: 3px solid #bdbdbd;
+    padding-left: 10px;
+}
+
+
+/* versioning/styles/versoes.css */
+/* Estilos específicos do #versoes */
+#versoes h2 {
+    border-left: 4px solid #555;
+    padding-left: 10px;
+}
