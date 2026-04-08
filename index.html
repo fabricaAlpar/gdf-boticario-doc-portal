@@ -1,0 +1,63 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alpar Tecnologia">
+    <meta name="description" content="Documentação desenvolvida pela Alpar Tecnologia para o sistema GDF Auditoria.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- iOS / Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="GDF Auditoria">
+
+    <!-- Android / Chrome -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#555555">
+
+    <!-- Open Graph (compartilhamento em redes/ferramentas) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GDF Auditoria | Documentação">
+    <meta property="og:description" content="Documentação desenvolvida pela Alpar Tecnologia para o sistema GDF Auditoria.">
+    <title>GDF Auditoria | Documentação</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos globais -->
+    <!-- Estilos por seção (nomeados pelo id da div) -->    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="card">
+        <div id="main_title">
+            <img src="assets/alpar.jpeg" alt="Alpar">
+            <div style="flex: 1; text-align: center;">
+                <h1 data-i18n="page_title">Manual de usabilidade</h1>
+                <p class="subtitle" data-i18n="page_subtitle">GDF Auditoria</p>
+            </div>
+            <img src="assets/gdf.png" alt="GDF">
+        </div>
+        <hr>
+        <div id="main_navigation">
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active" data-page="introducao" data-src="introduction/index.html"><span data-i18n="nav.introducao">Introdução</span></a></li>
+                    <li><a href="#" class="nav-link" data-page="visao-geral"  data-src="general_view/index.html"><span data-i18n="nav.visao-geral">Visão Geral</span></a></li>
+                    <li><a href="#" class="nav-link" data-page="usabilidade"  data-src="usability/index.html"><span data-i18n="nav.usabilidade">Usabilidade</span></a></li>
+                    <li><a href="#" class="nav-link" data-page="versoes"      data-src="versioning/index.html"><span data-i18n="nav.versoes">Versões</span></a></li>
+                </ul>
+            </nav>
+            <div id="lang_switcher">
+                <button class="lang-btn active" data-lang="pt" title="Português">🇧🇷</button>
+                <button class="lang-btn" data-lang="en" title="English">🇺🇸</button>
+                <button class="lang-btn" data-lang="es" title="Español">🇪🇸</button>
+            </div>
+        </div>
+        <div id="main_content"></div>
+        <footer id="main_footer">
+            <span class="last-update" data-i18n="footer.copyright">© Alpar — Informação protegida. Todos os direitos reservados.</span>
+            <span class="last-update" data-i18n="last_update">Última atualização: 07/04/2026</span>
+        </footer>
+    </div>    <script src="script.js"></script>
+</body>
+</html>
