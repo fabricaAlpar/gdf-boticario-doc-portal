@@ -124,6 +124,10 @@
         <a href="#subtopico-detalhe-fornecedor" data-i18n="usabilidade.detalhe-fornecedor.title"></a>
         <span class="section-index-sep">/</span>
         <a href="#subtopico-perfil" data-i18n="usabilidade.perfil.title"></a>
+        <span class="section-index-sep">/</span>
+        <a href="#subtopico-calendario" data-i18n="usabilidade.calendario.title"></a>
+        <span class="section-index-sep">/</span>
+        <a href="#subtopico-auditorias" data-i18n="usabilidade.auditorias.title"></a>
     </nav>
 
     <div id="usabilidade-faq">
@@ -173,6 +177,12 @@
                             <!-- TODO: adicionar imagem indicador_qtd_audit -->
                             <img src="assets/screens/details/indicador_qtd_audit.png" alt="Indicador de quantidade de auditorias" class="icon-feature-img">
                             <p data-i18n="usabilidade.fornecedores.feature_audit_p1"></p>
+                        </li>
+                        <li class="icon-feature-item">
+                            <img src="assets/screens/details/search_bar.png" alt="Barra de pesquisa" class="icon-feature-img icon-feature-img--lg">
+                            <p data-i18n="usabilidade.fornecedores.feature_search_p1"></p>
+                            <p data-i18n="usabilidade.fornecedores.feature_search_p2"></p>
+                            <p data-i18n="usabilidade.fornecedores.feature_search_p3"></p>
                         </li>
                     </ul>
                 </div>
@@ -295,7 +305,7 @@
                                 </div>
                                 <div class="mini-screen-text">
                                     <p data-i18n="usabilidade.perfil.acoes_p1"></p>
-                                    <p data-i18n="usabilidade.perfil.acoes_p2"></p>
+                                    <p class="callout" data-i18n="usabilidade.perfil.acoes_p2"></p>
                                 </div>
                             </div>
                         </div>
@@ -304,6 +314,63 @@
                 <div class="screen-image">
                     <button type="button" class="js-image-zoom" data-image-src="assets/screens/profile.png">
                         <img src="assets/screens/profile.png" alt="Tela de perfil do aplicativo GDF Auditoria">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="subtopico-calendario">
+            <h3 data-i18n="usabilidade.calendario.title"></h3>
+            <div class="screen-layout">
+                <div class="screen-image">
+                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/calendar.png">
+                        <img src="assets/screens/calendar.png" alt="Tela de calendário do aplicativo GDF Auditoria">
+                    </button>
+                </div>
+                <div class="screen-text">
+                    <p data-i18n="usabilidade.calendario.description_p1"></p>
+                    <p data-i18n="usabilidade.calendario.description_p2"></p>
+                    <p data-i18n="usabilidade.calendario.description_p3"></p>
+                    <p class="callout" data-i18n="usabilidade.calendario.callout"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="subtopico-auditorias">
+            <h3 data-i18n="usabilidade.auditorias.title"></h3>
+            <div class="screen-layout">
+                <div class="screen-text">
+                    <p data-i18n="usabilidade.auditorias.description_p1"></p>
+                    <p data-i18n="usabilidade.auditorias.description_p2"></p>
+                    <ol class="subtopico-ol-list">
+                        <li data-i18n="usabilidade.auditorias.li1"></li>
+                        <li data-i18n="usabilidade.auditorias.li2"></li>
+                        <li data-i18n="usabilidade.auditorias.li3"></li>
+                    </ol>
+                    <p data-i18n="usabilidade.auditorias.description_p3"></p>
+                    <div class="feature-card">
+                        <ul class="icon-feature-list">
+                            <li class="icon-feature-item">
+                                <!-- TODO: adicionar imagem audit_info -->
+                                <img src="assets/screens/details/audit_info.png" alt="Informações da auditoria" class="icon-feature-img icon-feature-img--xl">
+                                <p data-i18n="usabilidade.auditorias.feature_info_p1"></p>
+                            </li>
+                            <li class="icon-feature-item">
+                                <!-- TODO: adicionar imagem audit_status_icon -->
+                                <img src="assets/screens/details/audit_status_icon.png" alt="Status da auditoria" class="icon-feature-img">
+                                <p data-i18n="usabilidade.auditorias.feature_status_p1"></p>
+                            </li>
+                            <li class="icon-feature-item">
+                                <!-- TODO: adicionar imagem audit_search -->
+                                <img src="assets/screens/details/audit_search.png" alt="Barra de pesquisa de auditorias" class="icon-feature-img icon-feature-img--lg">
+                                <p data-i18n="usabilidade.auditorias.feature_search_p1"></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="screen-image">
+                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/auditorias.png">
+                        <img src="assets/screens/auditorias.png" alt="Tela de auditorias do aplicativo GDF Auditoria">
                     </button>
                 </div>
             </div>
@@ -444,7 +511,10 @@
       "description_p4": "Automaticamente, após tocar no coração, o usuário será redirecionado para a aba <strong>Minha carteira</strong>, onde uma barra de progresso indicará o andamento do sincronismo. O acesso completo aos dados do fornecedor será liberado somente após a conclusão desse processo.",
       "feature_fav_p1": "Ao tocar no ícone de coração, o auditor pode favoritar ou desfavoritar um fornecedor. Ao realizar essa ação, um processo de sincronismo é iniciado em segundo plano e uma barra de progresso azul é exibida no topo da tela, indicando o andamento da operação.",
       "feature_fav_p2": "O fornecedor favoritado passará a ser exibido na aba <strong>Minha Carteira</strong>, confirmando que ele agora faz parte do acompanhamento ativo do auditor e que seus dados estão sendo sincronizados para uso local.",
-      "feature_audit_p1": "Este ícone indica a quantidade de auditorias disponíveis para o fornecedor que serão sincronizadas para o banco de dados local do aplicativo no momento em que o processo de favoritamento for iniciado. Quanto maior o número, maior o volume de dados a ser processado durante a sincronização."
+      "feature_audit_p1": "Este ícone indica a quantidade de auditorias disponíveis para o fornecedor que serão sincronizadas para o banco de dados local do aplicativo no momento em que o processo de favoritamento for iniciado. Quanto maior o número, maior o volume de dados a ser processado durante a sincronização.",
+      "feature_search_p1": "Junto à listagem, há uma barra de pesquisa que permite ao usuário buscar fornecedores tanto na aba Minha Carteira quanto na aba Todos, facilitando o acesso rápido ao fornecedor desejado.",
+      "feature_search_p2": "Ao lado da barra de pesquisa, há um menu suspenso com uma listagem de tipos de fornecedores, ampliando a capacidade de filtragem disponível no aplicativo.",
+      "feature_search_p3": "Todos os filtros aplicados são dinâmicos e o usuário pode interagir com as badges de visualização para removê-los ou ajustá-los conforme necessário."
     },
     "detalhe-fornecedor": {
       "title": "Detalhe do Fornecedor",
@@ -480,8 +550,27 @@
       "tab_acoes": "Ações",
       "manual_p1": "Esta aba disponibiliza o acesso direto ao manual de suporte do aplicativo, permitindo que o auditor consulte orientações de uso sem precisar sair da aplicação.",
       "manual_p2": "O manual pode ser acessado a qualquer momento e reúne as principais informações sobre navegação, funcionalidades e boas práticas de uso.",
-      "acoes_p1": "A aba de Ações exibe as operações disponíveis na tela de Perfil, como exportação da base de dados local, exportação de logs e outras funcionalidades de suporte.",
-      "acoes_p2": "Essas ações são destinadas principalmente ao suporte técnico e à manutenção do aplicativo, podendo ser requisitadas em casos de análise ou resolução de problemas."
+      "acoes_p1": "Na tela de Perfil é possível acionar o sincronismo manual de toda a aplicação, permitindo que o auditor inicie o processo de sincronização sempre que necessário.",
+      "acoes_p2": "Importante: esta ação é essencialmente a versão mobile da funcionalidade que existia na plataforma web. Ao ser executada, ela sincroniza toda a base de dados local com o ServiceNow, enviando as informações pendentes e atualizando a base local com os dados mais recentes do servidor."
+    },
+    "calendario": {
+      "title": "Calendário",
+      "description_p1": "Esta tela oferece suporte ao auditor ao apresentar as auditorias agendadas e as já realizadas, de forma organizada e visualmente acessível.",
+      "description_p2": "Por meio do calendário, o auditor pode visualizar os dias com eventos registrados. Abaixo dele, uma listagem exibe todas as auditorias do mês em exibição, permitindo uma visão completa dos compromissos do período.",
+      "description_p3": "Ao tocar em um dia que contenha auditorias, uma janela é exibida com os detalhes dos eventos daquele dia. Da mesma forma, ao interagir com o card de um evento na lista, uma janela apresentará as informações detalhadas do evento selecionado.",
+      "callout": "Importante: todos os dados exibidos nesta tela dependem de sincronismo com o ServiceNow. As auditorias precisam ser previamente configuradas na plataforma do ServiceNow para que apareçam nesta tela."
+    },
+    "auditorias": {
+      "title": "Auditorias",
+      "description_p1": "Esta é a principal tela do aplicativo. Aqui o auditor encontrará tudo o que precisa em relação às auditorias dos fornecedores que foram favoritados na tela de Fornecedores.",
+      "description_p2": "A estrutura é semelhante à tela de Fornecedores, porém com algumas particularidades importantes:",
+      "li1": "O controle de status é feito pelas abas Aberto e Finalizado, permitindo filtrar rapidamente as auditorias em andamento ou já concluídas.",
+      "li2": "A pesquisa combina busca por texto digitado e filtro por data, oferecendo mais precisão na localização de uma auditoria específica.",
+      "li3": "O card de listagem apresenta diversas informações resumidas, proporcionando uma visão mais ampla e objetiva de cada auditoria sem a necessidade de acessá-la individualmente.",
+      "description_p3": "Assim como nas demais telas, ao tocar sobre um card o usuário é direcionado para a tela de detalhe da auditoria selecionada.",
+      "feature_info_p1": "Informações diretas da auditoria: o fornecedor ao qual está vinculada, o percentual de completude, a data de criação e a data da última revisão realizada.",
+      "feature_status_p1": "Indica o status atual da auditoria, permitindo ao auditor identificar de forma rápida e visual em qual etapa o processo se encontra.",
+      "feature_search_p1": "Como mencionado anteriormente, por meio desta barra e do botão de filtro, o usuário pode pesquisar auditorias por texto digitado e por data, facilitando a localização de registros específicos."
     }
   },
   "versoes": {
@@ -610,7 +699,10 @@
       "description_p4": "Automatically, after tapping the heart, the user will be redirected to the <strong>My Portfolio</strong> tab, where a progress bar will indicate the synchronization progress. Full access to the supplier's data will only be released after this process is complete.",
       "feature_fav_p1": "By tapping the heart icon, the auditor can favorite or unfavorite a supplier. When this action is performed, a background synchronization process begins and a blue progress bar is displayed at the top of the screen, indicating the progress of the operation.",
       "feature_fav_p2": "The favorited supplier will then appear in the <strong>My Portfolio</strong> tab, confirming that it is now part of the auditor's active tracking and that its data is being synchronized for local use.",
-      "feature_audit_p1": "This icon indicates the number of audits available for the supplier that will be synchronized to the application's local database when the favoriting process begins. The higher the number, the greater the volume of data to be processed during synchronization."
+      "feature_audit_p1": "This icon indicates the number of audits available for the supplier that will be synchronized to the application's local database when the favoriting process begins. The higher the number, the greater the volume of data to be processed during synchronization.",
+      "feature_search_p1": "Alongside the listing, there is a search bar that allows the user to search for suppliers both in the My Portfolio and All tabs, making it easier to quickly access the desired supplier.",
+      "feature_search_p2": "Next to the search bar, there is a dropdown menu with a list of supplier types, extending the filtering capability available in the application.",
+      "feature_search_p3": "All applied filters are dynamic and the user can interact with the display badges to remove or adjust them as needed."
     },
     "detalhe-fornecedor": {
       "title": "Supplier Details",
@@ -646,8 +738,27 @@
       "tab_acoes": "Actions",
       "manual_p1": "This tab provides direct access to the application's support manual, allowing the auditor to consult usage guidelines without leaving the application.",
       "manual_p2": "The manual can be accessed at any time and brings together the main information about navigation, features and best practices.",
-      "acoes_p1": "The Actions tab displays the operations available on the Profile screen, such as local database export, log export and other support features.",
-      "acoes_p2": "These actions are primarily intended for technical support and application maintenance, and may be requested in cases of analysis or problem resolution."
+      "acoes_p1": "On the Profile screen, it is possible to trigger manual synchronization for the entire application, allowing the auditor to start the synchronization process whenever necessary.",
+      "acoes_p2": "Important: this action is essentially the mobile version of the functionality that existed in the web platform. When executed, it synchronizes the entire local database with ServiceNow, sending pending information and updating the local database with the most recent data from the server."
+    },
+    "calendario": {
+      "title": "Calendar",
+      "description_p1": "This screen provides support to the auditor by displaying scheduled audits and those already completed, in an organized and visually accessible way.",
+      "description_p2": "Through the calendar, the auditor can see the days with registered events. Below it, a list displays all audits for the month being shown, providing a complete overview of the period's commitments.",
+      "description_p3": "When tapping on a day that contains audits, a window is displayed with the details of the events for that day. Likewise, when interacting with an event card in the list, a window will show the detailed information of the selected event.",
+      "callout": "Important: all data displayed on this screen depends on synchronization with ServiceNow. Audits must be previously configured on the ServiceNow platform in order to appear on this screen."
+    },
+    "auditorias": {
+      "title": "Audits",
+      "description_p1": "This is the main screen of the application. Here the auditor will find everything needed regarding the audits of suppliers that were favorited on the Suppliers screen.",
+      "description_p2": "The structure is similar to the Suppliers screen, but with some important particularities:",
+      "li1": "Status control is done through the Open and Finished tabs, allowing quick filtering of ongoing or already completed audits.",
+      "li2": "The search combines typed text search and date filter, providing more precision when locating a specific audit.",
+      "li3": "The listing card displays various summarized information, providing a broader and more objective view of each audit without the need to access it individually.",
+      "description_p3": "As with the other screens, tapping on a card directs the user to the detail screen of the selected audit.",
+      "feature_info_p1": "Direct audit information: the supplier the audit is linked to, the completion percentage, the creation date and the date of the last revision performed.",
+      "feature_status_p1": "Indicates the current status of the audit, allowing the auditor to quickly and visually identify which stage the process is at.",
+      "feature_search_p1": "As mentioned earlier, through this bar and the filter button, the user can search audits by typed text and by date, making it easier to locate specific records."
     }
   },
   "versoes": {
@@ -776,7 +887,10 @@
       "description_p4": "Automáticamente, tras tocar el corazón, el usuario será redirigido a la pestaña <strong>Mi cartera</strong>, donde una barra de progreso indicará el avance de la sincronización. El acceso completo a los datos del proveedor solo se habilitará una vez que este proceso haya finalizado.",
       "feature_fav_p1": "Al tocar el ícono de corazón, el auditor puede marcar o desmarcar un proveedor como favorito. Al realizar esta acción, se inicia un proceso de sincronización en segundo plano y una barra de progreso azul se muestra en la parte superior de la pantalla, indicando el avance de la operación.",
       "feature_fav_p2": "El proveedor marcado como favorito pasará a mostrarse en la pestaña <strong>Mi Cartera</strong>, confirmando que ahora forma parte del seguimiento activo del auditor y que sus datos están siendo sincronizados para uso local.",
-      "feature_audit_p1": "Este ícono indica la cantidad de auditorías disponibles para el proveedor que serán sincronizadas hacia la base de datos local de la aplicación en el momento en que se inicie el proceso de marcado como favorito. Cuanto mayor sea el número, mayor será el volumen de datos a procesar durante la sincronización."
+      "feature_audit_p1": "Este ícono indica la cantidad de auditorías disponibles para el proveedor que serán sincronizadas hacia la base de datos local de la aplicación en el momento en que se inicie el proceso de marcado como favorito. Cuanto mayor sea el número, mayor será el volumen de datos a procesar durante la sincronización.",
+      "feature_search_p1": "Junto al listado, hay una barra de búsqueda que permite al usuario buscar proveedores tanto en la pestaña Mi Cartera como en la pestaña Todos, facilitando el acceso rápido al proveedor deseado.",
+      "feature_search_p2": "Junto a la barra de búsqueda, hay un menú desplegable con un listado de tipos de proveedores, ampliando la capacidad de filtrado disponible en la aplicación.",
+      "feature_search_p3": "Todos los filtros aplicados son dinámicos y el usuario puede interactuar con las insignias de visualización para eliminarlos o ajustarlos según sea necesario."
     },
     "detalhe-fornecedor": {
       "title": "Detalle del Proveedor",
@@ -812,8 +926,27 @@
       "tab_acoes": "Acciones",
       "manual_p1": "Esta pestaña proporciona acceso directo al manual de soporte de la aplicación, permitiendo al auditor consultar orientaciones de uso sin necesidad de salir de la aplicación.",
       "manual_p2": "El manual puede consultarse en cualquier momento y reúne la información principal sobre navegación, funcionalidades y buenas prácticas de uso.",
-      "acoes_p1": "La pestaña de Acciones muestra las operaciones disponibles en la pantalla de Perfil, como exportación de la base de datos local, exportación de registros y otras funcionalidades de soporte.",
-      "acoes_p2": "Estas acciones están destinadas principalmente al soporte técnico y al mantenimiento de la aplicación, y pueden ser solicitadas en casos de análisis o resolución de problemas."
+      "acoes_p1": "En la pantalla de Perfil es posible activar la sincronización manual de toda la aplicación, permitiendo al auditor iniciar el proceso de sincronización siempre que sea necesario.",
+      "acoes_p2": "Importante: esta acción es esencialmente la versión móvil de la funcionalidad que existía en la plataforma web. Al ejecutarse, sincroniza toda la base de datos local con ServiceNow, enviando la información pendiente y actualizando la base local con los datos más recientes del servidor."
+    },
+    "calendario": {
+      "title": "Calendario",
+      "description_p1": "Esta pantalla brinda soporte al auditor al presentar las auditorías programadas y las ya realizadas, de forma organizada y visualmente accesible.",
+      "description_p2": "A través del calendario, el auditor puede visualizar los días con eventos registrados. Debajo de él, un listado muestra todas las auditorías del mes en pantalla, permitiendo una visión completa de los compromisos del período.",
+      "description_p3": "Al tocar un día que contenga auditorías, se muestra una ventana con los detalles de los eventos de ese día. De igual manera, al interactuar con la tarjeta de un evento en la lista, una ventana presentará la información detallada del evento seleccionado.",
+      "callout": "Importante: todos los datos mostrados en esta pantalla dependen de la sincronización con ServiceNow. Las auditorías deben estar previamente configuradas en la plataforma ServiceNow para que aparezcan en esta pantalla."
+    },
+    "auditorias": {
+      "title": "Auditorías",
+      "description_p1": "Esta es la pantalla principal de la aplicación. Aquí el auditor encontrará todo lo necesario con respecto a las auditorías de los proveedores que fueron marcados como favoritos en la pantalla de Proveedores.",
+      "description_p2": "La estructura es similar a la pantalla de Proveedores, pero con algunas particularidades importantes:",
+      "li1": "El control de estado se realiza a través de las pestañas Abierto y Finalizado, permitiendo filtrar rápidamente las auditorías en curso o ya finalizadas.",
+      "li2": "La búsqueda combina la búsqueda por texto escrito y el filtro por fecha, ofreciendo mayor precisión al localizar una auditoría específica.",
+      "li3": "La tarjeta de listado presenta diversa información resumida, proporcionando una visión más amplia y objetiva de cada auditoría sin necesidad de acceder a ella individualmente.",
+      "description_p3": "Al igual que en las demás pantallas, al tocar una tarjeta el usuario es dirigido a la pantalla de detalle de la auditoría seleccionada.",
+      "feature_info_p1": "Información directa de la auditoría: el proveedor al que está vinculada, el porcentaje de completitud, la fecha de creación y la fecha de la última revisión realizada.",
+      "feature_status_p1": "Indica el estado actual de la auditoría, permitiendo al auditor identificar de forma rápida y visual en qué etapa se encuentra el proceso.",
+      "feature_search_p1": "Como se mencionó anteriormente, a través de esta barra y el botón de filtro, el usuario puede buscar auditorías por texto escrito y por fecha, facilitando la localización de registros específicos."
     }
   },
   "versoes": {

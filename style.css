@@ -752,6 +752,79 @@ table tr:hover td {
     margin-top: 2px;
 }
 
+.icon-feature-img--lg {
+    width: 120px;
+    height: 120px;
+}
+
+.icon-feature-img--md {
+    width: 60px;
+    height: 60px;
+}
+
+.icon-feature-img--xl {
+    width: 240px;
+    height: 240px;
+}
+
+/* Item com imagem grande — usa flex para alinhar topo sem gap */
+.icon-feature-item.align-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    overflow: hidden;
+}
+
+.icon-feature-item.align-top .icon-feature-img {
+    float: none;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 0;
+}
+
+.icon-feature-item.align-top p {
+    align-self: flex-start;
+    margin-top: 0;
+}
+
+/* ── Moldura de destaque para lista de ícones ───────── */
+.feature-card {
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 4px 16px;
+    margin-top: 16px;
+    background-color: #fdfdfd;
+}
+
+.feature-card::before {
+    content: '💡';
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    font-size: 13px;
+    line-height: 1;
+    opacity: 0.75;
+}
+
+/* Auditorias — todos os itens da lista com flex e texto centralizado */
+#subtopico-auditorias .icon-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    overflow: hidden;
+}
+
+#subtopico-auditorias .icon-feature-img {
+    float: none;
+    flex-shrink: 0;
+    margin-top: 0;
+}
+
+#subtopico-auditorias .icon-feature-list {
+    gap: 0;
+}
+
 .icon-feature-item p {
     margin: 0;
     line-height: 1.7;
@@ -820,7 +893,8 @@ table tr:hover td {
     font-size: var(--fs-body);
 }
 
-/* Lista de funcionalidades do Perfil */
+/* Lista numerada genérica para subtópicos */
+.subtopico-ol-list,
 .perfil-features-list {
     margin: 10px 0 10px 20px;
     padding: 0;
@@ -828,6 +902,7 @@ table tr:hover td {
     font-family: var(--font-body);
 }
 
+.subtopico-ol-list li,
 .perfil-features-list li {
     font-size: var(--fs-body);
     font-family: var(--font-body);
