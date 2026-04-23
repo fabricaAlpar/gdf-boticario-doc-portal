@@ -1,0 +1,18 @@
+Este manual tem como objetivo orientar na utilização do aplicativo desenvolvido e apoiar as atividades de auditoria da boticário, fornecendo diretrizes gerais sobre suas funcionalidades, recursos e boas práticas de uso.
+
+ A ferramenta foi concebida para oferecer maior organização, rastreabilidade e eficiência na execução dos processos de auditoria, contribuindo para o registro estruturado das informações, acompanhamento das análises realizadas e padronização das rotinas de trabalho. Sua utilização busca apoiar o auditor na condução de verificações, coletas de evidências, apontamentos e controles relacionados às atividades avaliativas, sem substituir o julgamento técnico e profissional necessário em cada situação.
+
+ Ao longo deste manual, serão apresentadas as principais instruções para navegação, preenchimento de informações, registro de evidências e uso dos recursos disponíveis no sistema, com o propósito de facilitar sua adoção e promover uma experiência de uso mais segura, padronizada e eficiente.
+
+ Esta divido em:
+
+ 1 - Visao Geral:
+    Visa exibir as melhorias principais e os temas importantes dentro do funcionamento do aplicativo. Focado muito no dia dia do auditor.
+    Mostra as partes mais importantes relacionados ao sincronismo automatico, assim como as principais funcionalidade e tambem informacao sobre seguranca denrto do aplicativo.
+
+2 - Usabilidade
+    Esse item tem como objetivo principal trazer para o usuario como ele pode operar da melhor maneira, aproveitando as melhorias implementadas.
+    Mostraremos o fluxo e tela a tela para melhor exemplificar os processos.
+
+3 - Versoes
+    Aqui teremos a listagem de versoes de lancamento do aplicativo. O intuito eh mostrar para o usuario se ele possui a ultima versao e se o bug levantado foi resolvido na versao apresentada.
