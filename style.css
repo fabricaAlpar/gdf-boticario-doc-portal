@@ -669,6 +669,25 @@ table tr:hover td {
     margin-top: 10px;
 }
 
+/* Macrotemas no lado oposto ao tópico anterior */
+#subtopico-macrotemas .screen-layout {
+    flex-direction: row-reverse;
+}
+
+/* Questões do macrotema alinhado à esquerda (oposto de Macrotemas) */
+#subtopico-questoes-macrotema .screen-layout {
+    flex-direction: row;
+}
+
+#subtopico-macrotemas #subtopico-questoes-macrotema {
+    margin-top: 20px;
+}
+
+/* Detalhamento da questão no lado oposto ao tópico anterior */
+#subtopico-detalhe-questao .screen-layout {
+    flex-direction: row-reverse;
+}
+
 /* ── Mini layout para abas dentro de subtópicos ────────────── */
 .mini-screen-layout {
     display: flex;
@@ -727,6 +746,15 @@ table tr:hover td {
 /* Tabs do Detalhe do Fornecedor alinhadas à direita */
 #subtopico-detalhe-fornecedor .inner-tab-nav {
     justify-content: flex-end;
+}
+
+/* Detalhes de auditoria: subtópicos internos no lado oposto ao tópico principal */
+#subtopico-detalhe-auditoria .inner-tab-nav {
+    justify-content: flex-end;
+}
+
+#subtopico-detalhe-auditoria .mini-screen-layout {
+    flex-direction: row-reverse;
 }
 
 /* ── Lista de funcionalidades com ícones ────────────── */
@@ -893,6 +921,7 @@ table tr:hover td {
     font-size: var(--fs-body);
 }
 
+
 /* Lista numerada genérica para subtópicos */
 .subtopico-ol-list,
 .perfil-features-list {
@@ -913,6 +942,18 @@ table tr:hover td {
 
 @media (max-width: 900px) {
     .screen-layout {
+        flex-direction: column;
+    }
+
+    #subtopico-macrotemas .screen-layout {
+        flex-direction: column;
+    }
+
+    #subtopico-questoes-macrotema .screen-layout {
+        flex-direction: column;
+    }
+
+    #subtopico-detalhe-questao .screen-layout {
         flex-direction: column;
     }
 

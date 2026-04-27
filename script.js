@@ -128,6 +128,12 @@
         <a href="#subtopico-calendario" data-i18n="usabilidade.calendario.title"></a>
         <span class="section-index-sep">/</span>
         <a href="#subtopico-auditorias" data-i18n="usabilidade.auditorias.title"></a>
+        <span class="section-index-sep">/</span>
+        <a href="#subtopico-detalhe-auditoria" data-i18n="usabilidade.detalhe-auditoria.title"></a>
+        <span class="section-index-sep">/</span>
+        <a href="#subtopico-macrotemas" data-i18n="usabilidade.macrotemas.title"></a>
+        <span class="section-index-sep">/</span>
+        <a href="#subtopico-detalhe-questao" data-i18n="usabilidade.detalhe-questao.title"></a>
     </nav>
 
     <div id="usabilidade-faq">
@@ -375,6 +381,168 @@
                 </div>
             </div>
         </div>
+
+        <div id="subtopico-detalhe-auditoria">
+            <h3 data-i18n="usabilidade.detalhe-auditoria.title"></h3>
+            <div class="screen-layout">
+                <div class="screen-image">
+                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/audit_detail.png">
+                        <img src="assets/screens/audit_detail.png" alt="Tela de detalhes da auditoria do aplicativo GDF Auditoria">
+                    </button>
+                </div>
+                <div class="screen-text">
+                    <p data-i18n="usabilidade.detalhe-auditoria.description_p1"></p>
+                    <p data-i18n="usabilidade.detalhe-auditoria.description_p2"></p>
+                    <p data-i18n="usabilidade.detalhe-auditoria.description_p3"></p>
+                    <p class="callout" data-i18n="usabilidade.detalhe-auditoria.callout"></p>
+                    <div class="inner-tabs">
+                        <div class="inner-tab-nav">
+                            <button class="inner-tab-btn active" data-panel="detalhe-auditoria-positivos"><span data-i18n="usabilidade.detalhe-auditoria.tab_positivos">Pontos positivos</span></button>
+                            <button class="inner-tab-btn" data-panel="detalhe-auditoria-desenvolver"><span data-i18n="usabilidade.detalhe-auditoria.tab_desenvolver">Pontos a desenvolver</span></button>
+                        </div>
+                        <div id="detalhe-auditoria-positivos" class="inner-tab-panel active">
+                            <div class="mini-screen-layout">
+                                <div class="mini-screen-image">
+                                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/audit_posit_points.png">
+                                        <img src="assets/screens/audit_posit_points.png" alt="Detalhes da auditoria com foco em pontos positivos">
+                                    </button>
+                                </div>
+                                <div class="mini-screen-text">
+                                    <p data-i18n="usabilidade.detalhe-auditoria.positivos_p1"></p>
+                                    <p data-i18n="usabilidade.detalhe-auditoria.positivos_p2"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="detalhe-auditoria-desenvolver" class="inner-tab-panel">
+                            <div class="mini-screen-layout">
+                                <div class="mini-screen-image">
+                                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/audit_dev_points.png">
+                                        <img src="assets/screens/audit_dev_points.png" alt="Detalhes da auditoria com foco em pontos a desenvolver">
+                                    </button>
+                                </div>
+                                <div class="mini-screen-text">
+                                    <p data-i18n="usabilidade.detalhe-auditoria.desenvolver_p1"></p>
+                                    <p data-i18n="usabilidade.detalhe-auditoria.desenvolver_p2"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="subtopico-macrotemas">
+            <h3 data-i18n="usabilidade.macrotemas.title"></h3>
+            <div class="screen-layout">
+                <div class="screen-image">
+                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/audit_checklist.png">
+                        <img src="assets/screens/audit_checklist.png" alt="Tela de macrotemas da auditoria no aplicativo GDF Auditoria">
+                    </button>
+                </div>
+                <div class="screen-text">
+                    <p data-i18n="usabilidade.macrotemas.description_p1"></p>
+                    <p data-i18n="usabilidade.macrotemas.description_p2"></p>
+                    <p data-i18n="usabilidade.macrotemas.description_p3"></p>
+                    <p class="callout" data-i18n="usabilidade.macrotemas.callout"></p>
+                    <div id="subtopico-questoes-macrotema" class="inner-tabs">
+                        <div class="inner-tab-nav">
+                            <button class="inner-tab-btn active" data-panel="macrotemas-questoes"><span data-i18n="usabilidade.questoes-macrotema.title">Questões do macrotema</span></button>
+                        </div>
+                        <div id="macrotemas-questoes" class="inner-tab-panel active">
+                            <div class="mini-screen-layout">
+                                <div class="mini-screen-image">
+                                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/audit_topics.png">
+                                        <img src="assets/screens/audit_topics.png" alt="Tela de questões do macrotema no aplicativo GDF Auditoria">
+                                    </button>
+                                </div>
+                                <div class="mini-screen-text">
+                                    <p data-i18n="usabilidade.questoes-macrotema.description_p1"></p>
+                                    <p data-i18n="usabilidade.questoes-macrotema.description_p2"></p>
+                                    <p data-i18n="usabilidade.questoes-macrotema.description_p3"></p>
+                                    <p class="callout" data-i18n="usabilidade.questoes-macrotema.callout"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="subtopico-detalhe-questao">
+            <h3 data-i18n="usabilidade.detalhe-questao.title"></h3>
+            <div class="screen-layout">
+                <div class="screen-image">
+                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/audit_question.png">
+                        <img src="assets/screens/audit_question.png" alt="Tela de detalhamento da questão no aplicativo GDF Auditoria">
+                    </button>
+                </div>
+                <div class="screen-text">
+                    <p data-i18n="usabilidade.detalhe-questao.description_p1"></p>
+                    <p data-i18n="usabilidade.detalhe-questao.description_p2"></p>
+                    <p data-i18n="usabilidade.detalhe-questao.description_p3"></p>
+                    <p class="callout" data-i18n="usabilidade.detalhe-questao.callout1"></p>
+
+                    <div class="inner-tabs">
+                        <div class="inner-tab-nav">
+                            <button class="inner-tab-btn active" data-panel="detalhe-questao-checklist"><span data-i18n="usabilidade.detalhe-questao.tab_checklist">Checklist</span></button>
+                            <button class="inner-tab-btn" data-panel="detalhe-questao-comandos"><span data-i18n="usabilidade.detalhe-questao.tab_comandos">Ações rápidas</span></button>
+                            <button class="inner-tab-btn" data-panel="detalhe-questao-formulario-acao"><span data-i18n="usabilidade.detalhe-questao.tab_formulario_acao">Formulário de ação</span></button>
+                        </div>
+                        <div id="detalhe-questao-checklist" class="inner-tab-panel active">
+                            <div class="mini-screen-layout">
+                                <div class="mini-screen-image">
+                                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/audit_question_checklist.png">
+                                        <img src="assets/screens/audit_question_checklist.png" alt="Checklist da questão da auditoria">
+                                    </button>
+                                </div>
+                                <div class="mini-screen-text">
+                                    <p data-i18n="usabilidade.detalhe-questao.checklist_p1"></p>
+                                    <p data-i18n="usabilidade.detalhe-questao.checklist_p2"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="detalhe-questao-comandos" class="inner-tab-panel">
+                            <div class="mini-screen-layout">
+                                <div class="mini-screen-image">
+                                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/audit_question_commands.png">
+                                        <img src="assets/screens/audit_question_commands.png" alt="Comandos da questão da auditoria">
+                                    </button>
+                                </div>
+                                <div class="mini-screen-text">
+                                    <p data-i18n="usabilidade.detalhe-questao.comandos_p1"></p>
+                                    <p data-i18n="usabilidade.detalhe-questao.comandos_p2"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="detalhe-questao-formulario-acao" class="inner-tab-panel">
+                            <div class="mini-screen-layout">
+                                <div class="mini-screen-image">
+                                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/audit_question_action.png">
+                                        <img src="assets/screens/audit_question_action.png" alt="Formulário de ação da questão da auditoria">
+                                    </button>
+                                </div>
+                                <div class="mini-screen-text">
+                                    <p data-i18n="usabilidade.detalhe-questao.formulario_acao_p1"></p>
+                                    <p data-i18n="usabilidade.detalhe-questao.formulario_acao_p2"></p>
+                                    <div class="feature-card">
+                                        <ul class="icon-feature-list">
+                                            <li class="icon-feature-item">
+                                                <p data-i18n="usabilidade.detalhe-questao.attachment_size_p1"></p>
+                                            </li>
+                                            <li class="icon-feature-item">
+                                                <p data-i18n="usabilidade.detalhe-questao.attachment_types_p1"></p>
+                                                <p data-i18n-html="usabilidade.detalhe-questao.attachment_types_list"></p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="callout" data-i18n="usabilidade.detalhe-questao.callout2"></p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 `,
@@ -571,6 +739,53 @@
       "feature_info_p1": "Informações diretas da auditoria: o fornecedor ao qual está vinculada, o percentual de completude, a data de criação e a data da última revisão realizada.",
       "feature_status_p1": "Indica o status atual da auditoria, permitindo ao auditor identificar de forma rápida e visual em qual etapa o processo se encontra.",
       "feature_search_p1": "Como mencionado anteriormente, por meio desta barra e do botão de filtro, o usuário pode pesquisar auditorias por texto digitado e por data, facilitando a localização de registros específicos."
+    },
+    "detalhe-auditoria": {
+      "title": "Detalhes de auditoria",
+      "description_p1": "Esta tela consolida as informações essenciais da auditoria selecionada, permitindo ao auditor compreender rapidamente o contexto geral da execução sem precisar navegar para outras seções.",
+      "description_p2": "No topo são exibidos os dados do fornecedor e os identificadores principais do registro, enquanto o indicador central apresenta o percentual de resultados já preenchidos, apoiando o acompanhamento da evolução da auditoria.",
+      "description_p3": "Na parte inferior ficam os blocos de resumo, como pontos positivos e itens a desenvolver, além do acesso direto ao checklist, que funciona como ponto de entrada para revisar respostas, registrar evidências e avançar no processo de avaliação.",
+      "tab_positivos": "Pontos positivos",
+      "tab_desenvolver": "Pontos a desenvolver",
+      "positivos_p1": "Nesta visualização, o auditor acessa o detalhamento dos pontos positivos registrados na auditoria, com itens organizados para leitura rápida e apoio na validação das conformidades identificadas.",
+      "positivos_p2": "O objetivo é facilitar a consulta dos aspectos que atendem ao esperado, preservando o contexto da avaliação e apoiando análises comparativas durante a revisão do checklist.",
+      "desenvolver_p1": "Nesta aba, ficam concentrados os pontos a desenvolver, permitindo identificar com clareza os itens que exigem tratamento, plano de ação ou acompanhamento posterior.",
+      "desenvolver_p2": "Com essa separação, o auditor consegue priorizar ajustes, registrar evidências complementares e conduzir a evolução da auditoria de forma mais estruturada.",
+      "callout": "Importante: para garantir que os dados exibidos representem o estado mais recente da auditoria, mantenha o sincronismo do aplicativo em dia sempre que houver conexão disponível."
+    },
+    "macrotemas": {
+      "title": "Macrotemas",
+      "description_p1": "Esta tela organiza o checklist da auditoria em macrotemas para facilitar a navegação durante a execução. Cada card representa um agrupamento de requisitos relacionados ao mesmo contexto de avaliação.",
+      "description_p2": "Além do nome do macrotema, o card apresenta indicadores de progresso, como a razão de itens respondidos, e também destaca rapidamente ocorrências positivas ou pontos a desenvolver, apoiando a priorização da revisão.",
+      "description_p3": "Ao selecionar um macrotema, o auditor acessa a listagem de perguntas correspondentes, podendo registrar respostas e evidências de forma estruturada, mantendo rastreabilidade e consistência no preenchimento.",
+      "callout": "Importante: para garantir um acompanhamento fiel do avanço da auditoria, revise os macrotemas com pendências antes de finalizar o checklist."
+    },
+    "questoes-macrotema": {
+      "title": "Questões do macrotema",
+      "description_p1": "Esta tela apresenta as questões pertencentes ao macrotema selecionado, organizadas em cards para apoiar a leitura sequencial e a execução do checklist durante a auditoria.",
+      "description_p2": "Cada card resume informações essenciais da pergunta, como identificação, trecho descritivo e status atual, além de sinalizações visuais que ajudam o auditor a reconhecer rapidamente conformidades e pontos de atenção.",
+      "description_p3": "Ao tocar em uma questão, o auditor acessa o detalhamento para registrar resposta, parecer e evidências associadas, mantendo o histórico de avaliação claro e rastreável ao longo de toda a inspeção.",
+      "callout": "Importante: priorize as questões pendentes e valide os registros antes de avançar para o próximo macrotema, garantindo consistência na consolidação dos resultados."
+    },
+    "detalhe-questao": {
+      "title": "Detalhamento da questão",
+      "description_p1": "Esta tela reúne os elementos necessários para avaliar uma questão específica da auditoria, com o enunciado em destaque, opções de parecer e áreas de apoio para registro das evidências.",
+      "description_p2": "Ao selecionar o nível de atendimento, o auditor consegue documentar o resultado da análise de forma objetiva, mantendo visibilidade sobre a quantidade de evidências e não conformidades associadas à questão.",
+      "description_p3": "Os recursos de checklist, comandos e conformidades ajudam a estruturar a execução da pergunta, garantindo que a coleta de informações ocorra com rastreabilidade e alinhamento ao critério avaliado.",
+      "callout1": "Importante: antes de seguir para a próxima questão, confirme o parecer selecionado e valide se todos os registros obrigatórios foram preenchidos.",
+      "tab_checklist": "Checklist",
+      "tab_comandos": "Ações rápidas",
+      "tab_formulario_acao": "Formulário de ação",
+      "checklist_p1": "A aba de checklist apresenta os itens vinculados ao requisito da pergunta, permitindo marcar cada evidência de forma individual para comprovar o atendimento ao critério.",
+      "checklist_p2": "Essa visualização facilita a conferência rápida dos documentos e requisitos mínimos exigidos para fechar a avaliação com segurança.",
+      "comandos_p1": "Nesta aba ficam os atalhos operacionais da questão, como ações de edição, inclusão e gerenciamento dos registros vinculados à resposta.",
+      "comandos_p2": "Com esses comandos, o auditor reduz retrabalho e mantém o fluxo de preenchimento contínuo durante a inspeção.",
+      "formulario_acao_p1": "Nesta aba, o auditor registra ações diretamente para a questão, selecionando o tipo de ação, descrevendo o comentário e anexando evidências quando necessário.",
+      "formulario_acao_p2": "Esse formulário organiza o tratamento dos desvios no momento da avaliação, garantindo clareza no registro e rastreabilidade para acompanhamento posterior.",
+      "attachment_size_p1": "Tamanho máximo dos anexos: 7 MB.",
+      "attachment_types_p1": "Tipos de arquivos permitidos (extensões):",
+      "attachment_types_list": "xlsx, doc, docx, png, jpg, jpeg, webp, pdf",
+      "callout2": "Importante: ao finalizar uma ação e sair da tela, o sistema sincroniza automaticamente quando estiver online. Em modo offline, a atualização fica pendente até que o status de conectividade seja restabelecido."
     }
   },
   "versoes": {
@@ -759,6 +974,53 @@
       "feature_info_p1": "Direct audit information: the supplier the audit is linked to, the completion percentage, the creation date and the date of the last revision performed.",
       "feature_status_p1": "Indicates the current status of the audit, allowing the auditor to quickly and visually identify which stage the process is at.",
       "feature_search_p1": "As mentioned earlier, through this bar and the filter button, the user can search audits by typed text and by date, making it easier to locate specific records."
+    },
+    "detalhe-auditoria": {
+      "title": "Audit Details",
+      "description_p1": "This screen consolidates the essential information of the selected audit, allowing the auditor to quickly understand the overall execution context without navigating to other sections.",
+      "description_p2": "At the top, supplier data and main record identifiers are displayed, while the central indicator shows the percentage of completed results, supporting progress tracking throughout the audit.",
+      "description_p3": "In the lower area, summary blocks such as positive points and items to be developed are shown, along with direct access to the checklist, which serves as the entry point to review answers, record evidence and move the evaluation forward.",
+      "tab_positivos": "Positive Points",
+      "tab_desenvolver": "To Develop",
+      "positivos_p1": "In this view, the auditor accesses the detailed positive points recorded in the audit, with items organized for quick reading and support in validating identified conformities.",
+      "positivos_p2": "The goal is to make it easier to review aspects that meet expectations, preserving the evaluation context and supporting comparative analysis during checklist review.",
+      "desenvolver_p1": "This tab concentrates the points to be developed, making it easier to identify items that require treatment, an action plan or follow-up.",
+      "desenvolver_p2": "With this separation, the auditor can prioritize adjustments, register complementary evidence and drive audit progress in a more structured way.",
+      "callout": "Important: to ensure the displayed data reflects the most recent audit state, keep the application synchronization up to date whenever a connection is available."
+    },
+    "macrotemas": {
+      "title": "Macrothemes",
+      "description_p1": "This screen organizes the audit checklist into macrothemes to make navigation easier during execution. Each card represents a group of requirements linked to the same evaluation context.",
+      "description_p2": "In addition to the macrotheme name, each card displays progress indicators, such as the answered-items ratio, and quickly highlights positive findings or points to develop, supporting review prioritization.",
+      "description_p3": "When selecting a macrotheme, the auditor accesses the related question list and can register answers and evidence in a structured way, maintaining traceability and consistency in completion.",
+      "callout": "Important: to ensure reliable tracking of audit progress, review macrothemes with pending items before finalizing the checklist."
+    },
+    "questoes-macrotema": {
+      "title": "Macrotheme Questions",
+      "description_p1": "This screen shows the questions that belong to the selected macrotheme, organized into cards to support sequential reading and checklist execution during the audit.",
+      "description_p2": "Each card summarizes essential question information, such as identifier, descriptive excerpt and current status, along with visual signals that help the auditor quickly recognize conformities and attention points.",
+      "description_p3": "By tapping a question, the auditor opens the detail view to register the answer, assessment and related evidence, keeping the evaluation history clear and traceable throughout the inspection.",
+      "callout": "Important: prioritize pending questions and validate records before moving to the next macrotheme to ensure consistency in result consolidation."
+    },
+    "detalhe-questao": {
+      "title": "Question Detail",
+      "description_p1": "This screen brings together the elements needed to evaluate a specific audit question, with the statement highlighted, assessment options and support areas for evidence registration.",
+      "description_p2": "By selecting the compliance level, the auditor can document the analysis outcome objectively while keeping visibility of the amount of evidence and nonconformities linked to the question.",
+      "description_p3": "Checklist, command and conformity resources help structure question execution, ensuring information collection is traceable and aligned with the evaluated criterion.",
+      "callout1": "Important: before moving to the next question, confirm the selected assessment and validate that all mandatory records are completed.",
+      "tab_checklist": "Checklist",
+      "tab_comandos": "Quick actions",
+      "tab_formulario_acao": "Action Form",
+      "checklist_p1": "The checklist tab shows the items linked to the question requirement, allowing each evidence item to be marked individually to prove criterion compliance.",
+      "checklist_p2": "This view speeds up verification of documents and minimum requirements needed to complete the assessment safely.",
+      "comandos_p1": "This tab contains operational shortcuts for the question, such as editing, adding and managing records linked to the answer.",
+      "comandos_p2": "With these commands, the auditor reduces rework and keeps a continuous completion flow during the inspection.",
+      "formulario_acao_p1": "In this tab, the auditor records actions directly for the question, selecting the action type, describing comments and attaching evidence when needed.",
+      "formulario_acao_p2": "This form structures deviation handling during evaluation, ensuring clarity in records and traceability for follow-up.",
+      "attachment_size_p1": "Maximum attachment size: 7 MB.",
+      "attachment_types_p1": "Allowed file types (extensions):",
+      "attachment_types_list": "xlsx, doc, docx, png, jpg, jpeg, webp, pdf",
+      "callout2": "Important: when an action is finished and the user leaves the screen, the system synchronizes automatically while online. In offline mode, the update remains pending until connectivity status is restored."
     }
   },
   "versoes": {
@@ -947,6 +1209,53 @@
       "feature_info_p1": "Información directa de la auditoría: el proveedor al que está vinculada, el porcentaje de completitud, la fecha de creación y la fecha de la última revisión realizada.",
       "feature_status_p1": "Indica el estado actual de la auditoría, permitiendo al auditor identificar de forma rápida y visual en qué etapa se encuentra el proceso.",
       "feature_search_p1": "Como se mencionó anteriormente, a través de esta barra y el botón de filtro, el usuario puede buscar auditorías por texto escrito y por fecha, facilitando la localización de registros específicos."
+    },
+    "detalhe-auditoria": {
+      "title": "Detalles de auditoría",
+      "description_p1": "Esta pantalla consolida la información esencial de la auditoría seleccionada, permitiendo al auditor comprender rápidamente el contexto general de la ejecución sin necesidad de navegar por otras secciones.",
+      "description_p2": "En la parte superior se muestran los datos del proveedor y los identificadores principales del registro, mientras que el indicador central presenta el porcentaje de resultados ya completados, apoyando el seguimiento del avance de la auditoría.",
+      "description_p3": "En la parte inferior se encuentran los bloques de resumen, como puntos positivos e ítems a desarrollar, además del acceso directo al checklist, que funciona como punto de entrada para revisar respuestas, registrar evidencias y avanzar en el proceso de evaluación.",
+      "tab_positivos": "Puntos positivos",
+      "tab_desenvolver": "Por desarrollar",
+      "positivos_p1": "En esta visualización, el auditor accede al detalle de los puntos positivos registrados en la auditoría, con ítems organizados para una lectura rápida y apoyo en la validación de conformidades identificadas.",
+      "positivos_p2": "El objetivo es facilitar la consulta de los aspectos que cumplen lo esperado, preservando el contexto de la evaluación y apoyando análisis comparativos durante la revisión del checklist.",
+      "desenvolver_p1": "En esta pestaña se concentran los puntos por desarrollar, permitiendo identificar con claridad los ítems que requieren tratamiento, plan de acción o seguimiento posterior.",
+      "desenvolver_p2": "Con esta separación, el auditor puede priorizar ajustes, registrar evidencias complementarias y conducir la evolución de la auditoría de forma más estructurada.",
+      "callout": "Importante: para garantizar que los datos mostrados representen el estado más reciente de la auditoría, mantenga la sincronización de la aplicación al día siempre que haya conexión disponible."
+    },
+    "macrotemas": {
+      "title": "Macrotemas",
+      "description_p1": "Esta pantalla organiza el checklist de la auditoría en macrotemas para facilitar la navegación durante la ejecución. Cada tarjeta representa un agrupamiento de requisitos vinculados al mismo contexto de evaluación.",
+      "description_p2": "Además del nombre del macrotema, la tarjeta muestra indicadores de avance, como la relación de ítems respondidos, y también resalta rápidamente hallazgos positivos o puntos por desarrollar, apoyando la priorización de la revisión.",
+      "description_p3": "Al seleccionar un macrotema, el auditor accede al listado de preguntas correspondientes y puede registrar respuestas y evidencias de forma estructurada, manteniendo trazabilidad y consistencia en el llenado.",
+      "callout": "Importante: para garantizar un seguimiento fiel del avance de la auditoría, revise los macrotemas con pendientes antes de finalizar el checklist."
+    },
+    "questoes-macrotema": {
+      "title": "Preguntas del macrotema",
+      "description_p1": "Esta pantalla presenta las preguntas pertenecientes al macrotema seleccionado, organizadas en tarjetas para apoyar la lectura secuencial y la ejecución del checklist durante la auditoría.",
+      "description_p2": "Cada tarjeta resume información esencial de la pregunta, como identificación, fragmento descriptivo y estado actual, además de señales visuales que ayudan al auditor a reconocer rápidamente conformidades y puntos de atención.",
+      "description_p3": "Al tocar una pregunta, el auditor accede al detalle para registrar respuesta, criterio y evidencias asociadas, manteniendo el historial de evaluación claro y trazable durante toda la inspección.",
+      "callout": "Importante: priorice las preguntas pendientes y valide los registros antes de avanzar al siguiente macrotema, garantizando consistencia en la consolidación de resultados."
+    },
+    "detalhe-questao": {
+      "title": "Detalle de la pregunta",
+      "description_p1": "Esta pantalla reúne los elementos necesarios para evaluar una pregunta específica de la auditoría, con el enunciado destacado, opciones de dictamen y áreas de apoyo para registrar evidencias.",
+      "description_p2": "Al seleccionar el nivel de cumplimiento, el auditor puede documentar el resultado del análisis de forma objetiva, manteniendo visibilidad sobre la cantidad de evidencias y no conformidades vinculadas a la pregunta.",
+      "description_p3": "Los recursos de checklist, comandos y conformidades ayudan a estructurar la ejecución de la pregunta, garantizando que la recolección de información ocurra con trazabilidad y alineación al criterio evaluado.",
+      "callout1": "Importante: antes de avanzar a la siguiente pregunta, confirme el dictamen seleccionado y valide que todos los registros obligatorios estén completos.",
+      "tab_checklist": "Checklist",
+      "tab_comandos": "Acciones rapidas",
+      "tab_formulario_acao": "Formulario de accion",
+      "checklist_p1": "La pestaña de checklist muestra los ítems vinculados al requisito de la pregunta, permitiendo marcar cada evidencia de forma individual para comprobar el cumplimiento del criterio.",
+      "checklist_p2": "Esta visualización facilita la verificación rápida de documentos y requisitos mínimos necesarios para cerrar la evaluación con seguridad.",
+      "comandos_p1": "En esta pestaña se encuentran los atajos operativos de la pregunta, como acciones de edición, inclusión y gestión de registros vinculados a la respuesta.",
+      "comandos_p2": "Con estos comandos, el auditor reduce retrabajos y mantiene un flujo continuo de llenado durante la inspección.",
+      "formulario_acao_p1": "En esta pestaña, el auditor registra acciones directamente para la pregunta, seleccionando el tipo de accion, describiendo el comentario y adjuntando evidencias cuando sea necesario.",
+      "formulario_acao_p2": "Este formulario organiza el tratamiento de desvíos durante la evaluación, garantizando claridad en el registro y trazabilidad para el seguimiento posterior.",
+      "attachment_size_p1": "Tamaño máximo de los anexos: 7 MB.",
+      "attachment_types_p1": "Tipos de archivos permitidos (extensiones):",
+      "attachment_types_list": "xlsx, doc, docx, png, jpg, jpeg, webp, pdf",
+      "callout2": "Importante: al finalizar una accion y salir de la pantalla, el sistema sincroniza automaticamente cuando está en linea. En modo sin conexión, la actualización queda pendiente hasta que el estado de conectividad se restablezca."
     }
   },
   "versoes": {
