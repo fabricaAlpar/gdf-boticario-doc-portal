@@ -357,6 +357,7 @@ table tr:hover td {
     }
 
     #card {
+        max-width: 90%;
         padding: 16px;
         border-radius: 8px;
     }
@@ -945,6 +946,11 @@ table tr:hover td {
         flex-direction: column;
     }
 
+    .mini-screen-layout {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     #subtopico-macrotemas .screen-layout {
         flex-direction: column;
     }
@@ -960,6 +966,71 @@ table tr:hover td {
     .screen-image {
         flex: 1 1 auto;
         max-width: 220px;
+    }
+
+    .mini-screen-image {
+        flex: 1 1 auto;
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .inner-tab-nav {
+        flex-wrap: wrap;
+    }
+
+    .inner-tab-btn {
+        white-space: nowrap;
+    }
+
+    .screen-layout,
+    .mini-screen-layout {
+        align-items: center;
+    }
+
+    .screen-image,
+    .mini-screen-image {
+        width: auto;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .screen-image .js-image-zoom,
+    .mini-screen-image .js-image-zoom {
+        width: auto;
+        max-width: 100%;
+        height: 70vh;
+        max-height: 70vh;
+        aspect-ratio: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .screen-image img,
+    .mini-screen-image img {
+        object-fit: contain;
+    }
+
+    #subtopico-detalhe-auditoria .mini-screen-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #subtopico-auditorias .icon-feature-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    #subtopico-auditorias .icon-feature-img {
+        margin-right: 0;
+    }
+
+    .feature-card {
+        padding-left: 14px;
+        padding-right: 14px;
     }
 }
 

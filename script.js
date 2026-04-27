@@ -278,7 +278,6 @@
                         <li data-i18n="usabilidade.perfil.li4"></li>
                         <li data-i18n="usabilidade.perfil.li5"></li>
                         <li data-i18n="usabilidade.perfil.li6"></li>
-                        <li data-i18n="usabilidade.perfil.li7"></li>
                     </ol>
                     <p data-i18n="usabilidade.perfil.description_p2"></p>
                     <p class="callout" data-i18n="usabilidade.perfil.callout1"></p>
@@ -305,21 +304,22 @@
                         <div id="perfil-acoes" class="inner-tab-panel">
                             <div class="mini-screen-layout">
                                 <div class="mini-screen-image">
-                                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/profile_commands.png">
-                                        <img src="assets/screens/profile_commands.png" alt="Ações do perfil">
+                                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/profile_actions.png">
+                                        <img src="assets/screens/profile_actions.png" alt="Ações do perfil">
                                     </button>
                                 </div>
                                 <div class="mini-screen-text">
                                     <p data-i18n="usabilidade.perfil.acoes_p1"></p>
                                     <p class="callout" data-i18n="usabilidade.perfil.acoes_p2"></p>
+                                    <p class="callout" data-i18n="usabilidade.perfil.acoes_p3"></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="screen-image">
-                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/profile.png">
-                        <img src="assets/screens/profile.png" alt="Tela de perfil do aplicativo GDF Auditoria">
+                    <button type="button" class="js-image-zoom" data-image-src="assets/screens/profile_cards.png">
+                        <img src="assets/screens/profile_cards.png" alt="Tela de perfil do aplicativo GDF Auditoria">
                     </button>
                 </div>
             </div>
@@ -710,7 +710,6 @@
       "li4": "Ativar ou desativar as notificações do aplicativo",
       "li5": "Acessar o manual de suporte diretamente pela aplicação",
       "li6": "Ajustar o tamanho da fonte para melhor conforto visual",
-      "li7": "Enviar os logs da aplicação para o administrador. Essa ação salvará um arquivo de log no dispositivo onde o aplicativo está instalado, ficando disponível para envio por qualquer meio de comunicação disponível.",
       "description_p2": "Na parte superior da tela são exibidos o e-mail do auditor e o número identificador da instalação — informações relevantes para consulta e suporte técnico.",
       "callout1": "Atenção: as notificações do aplicativo somente funcionarão se as permissões de notificação estiverem habilitadas nas configurações do próprio dispositivo.",
       "callout2": "Atenção: o número da instalação é um identificador único utilizado no atendimento de suporte técnico. Guarde essa informação e a repasse ao seu superior caso seja solicitado.",
@@ -718,8 +717,9 @@
       "tab_acoes": "Ações",
       "manual_p1": "Esta aba disponibiliza o acesso direto ao manual de suporte do aplicativo, permitindo que o auditor consulte orientações de uso sem precisar sair da aplicação.",
       "manual_p2": "O manual pode ser acessado a qualquer momento e reúne as principais informações sobre navegação, funcionalidades e boas práticas de uso.",
-      "acoes_p1": "Na tela de Perfil é possível acionar o sincronismo manual de toda a aplicação, permitindo que o auditor inicie o processo de sincronização sempre que necessário.",
-      "acoes_p2": "Importante: esta ação é essencialmente a versão mobile da funcionalidade que existia na plataforma web. Ao ser executada, ela sincroniza toda a base de dados local com o ServiceNow, enviando as informações pendentes e atualizando a base local com os dados mais recentes do servidor."
+      "acoes_p1": "Na tela de Perfil, o auditor pode executar ações rápidas de suporte, como o sincronismo manual da aplicação e o envio de logs para análise administrativa.",
+      "acoes_p2": "Importante: no sincronismo manual, a aplicação envia informações pendentes e atualiza a base local com os dados mais recentes do ServiceNow.",
+      "acoes_p3": "Importante: no envio de logs, o aplicativo direciona o usuário para o provedor de e-mail com os endereços dos administradores, assunto e arquivo de log já preenchidos para facilitar o encaminhamento."
     },
     "calendario": {
       "title": "Calendário",
@@ -785,7 +785,7 @@
       "attachment_size_p1": "Tamanho máximo dos anexos: 7 MB.",
       "attachment_types_p1": "Tipos de arquivos permitidos (extensões):",
       "attachment_types_list": "xlsx, doc, docx, png, jpg, jpeg, webp, pdf",
-      "callout2": "Importante: ao finalizar uma ação e sair da tela, o sistema sincroniza automaticamente quando estiver online. Em modo offline, a atualização fica pendente até que o status de conectividade seja restabelecido."
+      "callout2": "Atenção: ao finalizar uma ação e sair da tela, o sistema sincroniza automaticamente quando estiver online. Em modo offline, a atualização fica pendente até que o status de conectividade seja restabelecido."
     }
   },
   "versoes": {
@@ -945,7 +945,6 @@
       "li4": "Enable or disable application notifications",
       "li5": "Access the support manual directly from the application",
       "li6": "Adjust the font size for better visual comfort",
-      "li7": "Send application logs to the administrator. This action will save a log file on the device where the application is installed, making it available to be shared through any available communication channel.",
       "description_p2": "At the top of the screen, the auditor's email and the installation identifier number are displayed — relevant information for consultation and technical support purposes.",
       "callout1": "Attention: application notifications will only work if notification permissions are enabled in the device's own settings.",
       "callout2": "Attention: the installation number is a unique identifier used in technical support. Keep this information and pass it on to your supervisor if requested.",
@@ -953,8 +952,9 @@
       "tab_acoes": "Actions",
       "manual_p1": "This tab provides direct access to the application's support manual, allowing the auditor to consult usage guidelines without leaving the application.",
       "manual_p2": "The manual can be accessed at any time and brings together the main information about navigation, features and best practices.",
-      "acoes_p1": "On the Profile screen, it is possible to trigger manual synchronization for the entire application, allowing the auditor to start the synchronization process whenever necessary.",
-      "acoes_p2": "Important: this action is essentially the mobile version of the functionality that existed in the web platform. When executed, it synchronizes the entire local database with ServiceNow, sending pending information and updating the local database with the most recent data from the server."
+      "acoes_p1": "On the Profile screen, the auditor can run quick support actions, such as manual application synchronization and log sharing for administrative analysis.",
+      "acoes_p2": "Important: during manual synchronization, the application sends pending information and updates the local database with the latest data from ServiceNow.",
+      "acoes_p3": "Important: for log sharing, the app redirects the user to the email provider with administrator addresses, subject and the attached log file already prefilled to simplify sending."
     },
     "calendario": {
       "title": "Calendar",
@@ -1180,7 +1180,6 @@
       "li4": "Activar o desactivar las notificaciones de la aplicación",
       "li5": "Acceder al manual de soporte directamente desde la aplicación",
       "li6": "Ajustar el tamaño de fuente para mayor comodidad visual",
-      "li7": "Enviar los registros de la aplicación al administrador. Esta acción guardará un archivo de registro en el dispositivo donde está instalada la aplicación, quedando disponible para su envío a través de cualquier medio de comunicación disponible.",
       "description_p2": "En la parte superior de la pantalla se muestran el correo electrónico del auditor y el número identificador de instalación — información relevante para consulta y soporte técnico.",
       "callout1": "Atención: las notificaciones de la aplicación solo funcionarán si los permisos de notificación están habilitados en la configuración del propio dispositivo.",
       "callout2": "Atención: el número de instalación es un identificador único utilizado en el soporte técnico. Guarde esta información y compártala con su superior si es solicitado.",
@@ -1188,8 +1187,9 @@
       "tab_acoes": "Acciones",
       "manual_p1": "Esta pestaña proporciona acceso directo al manual de soporte de la aplicación, permitiendo al auditor consultar orientaciones de uso sin necesidad de salir de la aplicación.",
       "manual_p2": "El manual puede consultarse en cualquier momento y reúne la información principal sobre navegación, funcionalidades y buenas prácticas de uso.",
-      "acoes_p1": "En la pantalla de Perfil es posible activar la sincronización manual de toda la aplicación, permitiendo al auditor iniciar el proceso de sincronización siempre que sea necesario.",
-      "acoes_p2": "Importante: esta acción es esencialmente la versión móvil de la funcionalidad que existía en la plataforma web. Al ejecutarse, sincroniza toda la base de datos local con ServiceNow, enviando la información pendiente y actualizando la base local con los datos más recientes del servidor."
+      "acoes_p1": "En la pantalla de Perfil, el auditor puede ejecutar acciones rápidas de soporte, como la sincronización manual de la aplicación y el envío de logs para análisis administrativo.",
+      "acoes_p2": "Importante: en la sincronización manual, la aplicación envía información pendiente y actualiza la base local con los datos más recientes de ServiceNow.",
+      "acoes_p3": "Importante: en el envío de logs, la aplicación redirige al usuario al proveedor de correo con direcciones de administradores, asunto y archivo de log adjunto ya completados para facilitar el envío."
     },
     "calendario": {
       "title": "Calendario",
